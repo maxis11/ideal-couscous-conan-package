@@ -9,7 +9,7 @@
 2 Prerequisites
 ==========
 - GCC >= 7.0 || clang >= 5.0
-- See ideal-couscous [prerequisites](https://github.com/maxis11/ideal-couscous/blob/v0.0.4-alpha/README.md) prerequisites
+- See ideal-couscous [prerequisites](https://github.com/maxis11/ideal-couscous/blob/v0.0.4-alpha/README.md)
 
 3 Licence
 ==========
