@@ -6,7 +6,7 @@ import os, shutil
 
 class IdealcouscousConan(ConanFile):
     name = "IdealCouscous"
-    version = "0.0.4-alpha"
+    version = "0.1-beta"
     license = "Apache-2.0"
     url = "https://github.com/maxis11/ideal-couscous"
     settings = "os", "compiler", "build_type", "arch"
@@ -23,10 +23,10 @@ class IdealcouscousConan(ConanFile):
         
 
     def source(self):
-        tools.download("https://github.com/maxis11/ideal-couscous/archive/v0.0.4-alpha.tar.gz", "ic.zip")
-        tools.untargz("ic.zip")
-        os.unlink("ic.zip")
-        shutil.move("ideal-couscous-0.0.4-alpha", "IdealCouscous")
+        tools.download("https://github.com/maxis11/ideal-couscous/archive/v0.1-beta.tar.gz", "ic.tar.gz")
+        tools.untargz("ic.tar.gz")
+        os.unlink("ic.tar.gz")
+        shutil.move("ideal-couscous-0.1-beta", "IdealCouscous")
         
 
     def package(self):
