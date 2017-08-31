@@ -6,11 +6,11 @@ import os, shutil
 
 class IdealcouscousConan(ConanFile):
     name = "IdealCouscous"
-    version = "0.1-beta"
+    version = "devel"
     license = "Apache-2.0"
     url = "https://github.com/maxis11/ideal-couscous"
     settings = "os", "compiler", "build_type", "arch"
-    generators = "qbs"
+    #generators = "qbs"
     description = "compile-time reflection header-only library for c++1z"
     build_policy = "missing"
     
@@ -23,10 +23,10 @@ class IdealcouscousConan(ConanFile):
         
 
     def source(self):
-        tools.download("https://github.com/maxis11/ideal-couscous/archive/v0.1-beta.tar.gz", "ic.tar.gz")
+        tools.download("https://github.com/maxis11/ideal-couscous/archive/master.tar.gz", "ic.tar.gz")
         tools.untargz("ic.tar.gz")
         os.unlink("ic.tar.gz")
-        shutil.move("ideal-couscous-0.1-beta", "IdealCouscous")
+        shutil.move("ideal-couscous-master", "IdealCouscous")
         
 
     def package(self):
